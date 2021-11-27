@@ -1,0 +1,23 @@
+{
+	"name": "tech_blog",
+	"version": "1.0.0",
+	"main": "server.js",
+	"scripts": {
+		"start": "node src/server.js",
+		"dev": "nodemon src/server.js",
+		"seed": "node src/seeds/index.js"
+	},
+	"dependencies": {
+		"bcrypt": "^5.0.1",
+		"connect-session-sequelize": "^7.1.2",
+		"dotenv": "^10.0.0",
+		"express": "^4.17.1",
+		"express-handlebars": "^6.0.2",
+		"express-session": "^1.17.1",
+		"mysql2": "^2.3.3",
+		"sequelize": "6.11.0"
+	},
+	"devDependencies": {
+		"nodemon": "^2.0.15"
+	}
+}
