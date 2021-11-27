@@ -1,0 +1,9 @@
+<div class="flex flex-col gap-5">
+	{{#each posts as |post|}}
+		<div>
+			{{> post-info post }}
+		</div>
+	{{else}}
+		<h6 class="pb-4 text-center italic">there are currently no posts</h6>
+	{{/each}}
+</div>

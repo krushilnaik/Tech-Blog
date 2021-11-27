@@ -1,0 +1,56 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css"
+      integrity="sha512-wnea99uKIC3TJF7v4eKk4Y+lMz2Mklv18+r4na2Gn1abDRPPOeef95xTzdwGD9e6zXJBteMIhZ1+68QC5byJZw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>
+      Tech Blog
+    </title>
+  </head>
+  <body class="bg-green-200">
+    <header class="flex flex-col gap-4 p-6 bg-gray-900">
+      <nav>
+        <ul class="flex flex-row text-2xl gap-4 list-none">
+          <li>
+            <a class="text-green-200 no-underline" href="/">
+              Homepage
+            </a>
+          </li>
+          <li>
+            <a class="text-green-200 no-underline" href="/dashboard">
+              Dashboard
+            </a>
+          </li>
+          <li>
+            <a class="text-green-200 no-underline" href="/login">
+              Login
+            </a>
+          </li>
+          {{#if loggedIn}}
+            <li>
+              <button class="logout" onclick="logout();">
+                Logout
+              </button>
+            </li>
+          {{/if}}
+        </ul>
+      </nav>
+      <h1
+        class="logo px-3 py-1 font-bold inline-block w-max text-4xl rounded-xl bg-green-200"
+      >
+        The Tech Blog
+      </h1>
+    </header>
+    <main class="p-6">
+      {{{body}}}
+    </main>
+    <script src="assets/js/logout.js"></script>
+  </body>
+</html>

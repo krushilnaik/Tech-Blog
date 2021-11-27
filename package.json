@@ -18,6 +18,9 @@
 		"sequelize": "6.11.0"
 	},
 	"devDependencies": {
-		"nodemon": "^2.0.15"
+		"autoprefixer": "^10.4.0",
+		"nodemon": "^2.0.15",
+		"postcss": "^8.4.3",
+		"tailwindcss": "^2.2.19"
 	}
 }
