@@ -1,0 +1,13 @@
+<section>
+	<h2>Your Posts</h2>
+	{{#each posts as |post|}}
+		{{> dashboard-postinfo post}}
+		<a href="/dashboard/edit/{{post.id}}">Edit post</a>
+	{{else}}
+		<span>You have no posts</span>			
+	{{/each}}
+</section>
+
+<button type="submit" class="bg-gray-800 text-gray-200 p-3 rounded-lg absolute bottom-14 left-1/2"><a class="link" href="/dashboard/new">+ New Post</a></button>
+
+<script src="/assets/js/add-post.js"></script>

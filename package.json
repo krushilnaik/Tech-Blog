@@ -8,16 +8,17 @@
 		"seed": "node src/seeds/index.js"
 	},
 	"dependencies": {
-		"bcrypt": "^5.0.1",
-		"connect-session-sequelize": "^7.1.2",
-		"dotenv": "^10.0.0",
+		"bcrypt": "^5.0.0",
+		"connect-session-sequelize": "^6.1.1",
+		"dotenv": "^8.2.0",
 		"express": "^4.17.1",
-		"express-handlebars": "^6.0.2",
+		"express-handlebars": "^4.0.4",
 		"express-session": "^1.17.1",
-		"mysql2": "^2.3.3",
-		"sequelize": "6.11.0"
+		"mysql2": "^2.1.0",
+		"sequelize": "^5.21.12"
 	},
 	"devDependencies": {
+		"@types/sequelize": "^4.28.10",
 		"autoprefixer": "^10.4.0",
 		"nodemon": "^2.0.15",
 		"postcss": "^8.4.3",

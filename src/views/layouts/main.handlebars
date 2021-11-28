@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -9,7 +10,9 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="assets/css/style.css" />
+		
+		<link rel="stylesheet" href="/assets/css/style.css">
+
     <title>
       Tech Blog
     </title>
@@ -28,29 +31,36 @@
               Dashboard
             </a>
           </li>
-          <li>
-            <a class="text-green-200 no-underline" href="/login">
-              Login
-            </a>
-          </li>
-          {{#if loggedIn}}
-            <li>
-              <button class="logout" onclick="logout();">
-                Logout
-              </button>
-            </li>
-          {{/if}}
-        </ul>
-      </nav>
-      <h1
-        class="logo px-3 py-1 font-bold inline-block w-max text-4xl rounded-xl bg-green-200"
-      >
-        The Tech Blog
-      </h1>
+						<li>
+							{{#if loggedIn}}
+								<a class="text-green-200 no-underline" href="/" id="logout">
+									Logout
+								</a>
+							{{else}}
+								<a class="text-green-200 no-underline" href="/login">
+									Login
+								</a>
+							{{/if}}
+						</li>
+					</nav>
+				<h1
+					class="logo px-3 py-1 font-bold inline-block w-max text-4xl rounded-xl bg-green-200"
+				>
+					{{#if title}}
+						{{title}}
+					{{else}}
+						The Tech Blog
+					{{/if}}
+				</h1>
     </header>
+
     <main class="p-6">
       {{{body}}}
     </main>
-    <script src="assets/js/logout.js"></script>
-  </body>
+
+    {{#if loggedIn}}
+			<script src="assets/js/logout.js"></script>
+    {{/if}}
+	</body>
+
 </html>

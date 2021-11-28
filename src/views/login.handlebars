@@ -1,27 +1,25 @@
 <div class="flex flex-col border-4 border-gray-800 text-lg">
-  <h2 class="bg-gray-800 text-green-100 text-2xl p-2">
-    Login
-  </h2>
-  <form class="grid gap-4 p-3">
-    <label class="block" for="email-login">
-      Username
-    </label>
-    <input type="text" id="email-login" />
-    <label class="block" for="password-login">
-      Password
-    </label>
-    <input type="password" id="password-login" />
-    <button
-      type="submit"
-      class="block bg-gray-500 p-3 text-gray-200 rounded-md my-2"
-    >
-      Login!
-    </button>
-    <a href="/signup">
-      <button type="button" class="bg-blue-400 p-2 text-white">
-        Sign up instead
-      </button>
-    </a>
-  </form>
+	<h3 class="bg-gray-800 text-green-100 text-2xl p-2">
+		Login
+	</h3>
+	<form id="login-form" class="grid gap-4 p-3">
+		<label class="block" for="username-login">
+			Username
+		</label>
+		<input type="text" id="username-login" />
+		<label class="block" for="password-login">
+			Password
+		</label>
+		<input type="password" id="password-login" />
+		<button
+			type="submit"
+			class="block bg-gray-500 p-3 text-gray-200 rounded-md my-2"
+		>
+			Login!
+		</button>
+		<a href="/signup" class="bg-blue-400 p-2 text-white w-max">
+			Sign up instead
+		</a>
+	</form>
 </div>
-<script src="assets/js/login.js"></script>
+<script src="/assets/js/login.js"></script>

@@ -1,8 +1,10 @@
 module.exports = {
-	mode: 'jit',
-	purge: ['./src/views/**/*.handlebars', './src/public/css/**.css'],
+	purge: [],
 	darkMode: false, // or 'media' or 'class'
 	theme: {
+		extend: {}
+	},
+	variants: {
 		extend: {}
 	},
 	plugins: []
