@@ -2,14 +2,11 @@
 {{> post-info post}}
 
 {{#if loggedIn}}
-<div class="card">
-    <h3 class="card-header"></h3>
-    <form class="card-body comment-form" id="comment-form">
-
-        <label class="form-label">Comment</label>
-        <input id="comment" name="comment-body" class="form-input" />
-
-        <button type="submit" class="btn">Submit</button>
+<div class="flex flex-col border-4 border-gray-800 text-lg my-3">
+    <h3 class="bg-gray-800 text-green-100 text-2xl p-3">Comment</h3>
+    <form class="flex flex-col" id="comment-form">
+			<textarea id="comment" name="comment-body" rows="4" class="form-input"></textarea>
+			<button type="submit" class="block bg-gray-500 p-3 text-gray-200 rounded-md my-2">Submit</button>
     </form>
 </div>
 {{/if}}
@@ -18,5 +15,5 @@
 {{> comments post.comments}}
 
 {{#if loggedIn}}
-<script src="/assets/js/comment.js"></script>
+	<script src="/assets/js/comment.js"></script>
 {{/if}}

@@ -1,31 +1,24 @@
-<div class="card">
-	<h3 class="card-header">
+<div class="border-4 border-gray-800">
+	<h3 class="bg-gray-800 text-gray-100 text-3xl text-center">
 		Edit Post
 	</h3>
-	<form class="card-body edit-post-form">
-		<label for="post-title" class="form-label">
+	<form class="flex flex-col gap-3 p-4 edit-post-form">
+		<label for="post-title">
 			Title
 		</label>
-		<input
-			name="post-title"
-			type="text"
-			value="{{post.title}}"
-			class="form-input"
-		/>
-		<label class="form-label" for="content">
+		<input name="post-title" type="text" value="{{post.title}}" />
+		<label for="content">
 			Content
 		</label>
-		<input
-			name="content"
-			type="text"
-			value="{{post.content}}"
-			class="form-input"
-		/>
-		<button type="submit" class="btn">
+		<input name="content" type="text" value="{{post.content}}" />
+		<button type="submit" class="p-3 bg-gray-500 rounded-lg text-gray-100">
 			Update Post
 		</button>
-		<button type="button" class="delete-post-btn btn">
-			Delete Post
+		<button
+			type="button"
+			class="delete-post-btn p-3 bg-gray-500 rounded-lg text-gray-100"
+		>
+			Delete
 		</button>
 	</form>
 </div>
